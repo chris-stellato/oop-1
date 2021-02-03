@@ -6,8 +6,8 @@ class Polynomial():
         return f"Polynomial({self.coeff_lst})"
 
     def __add__(self, sec_pol):
-        for deg, coeff in enumerate(self.coeff_lst):
-            self.coeff_lst[deg]+=sec_pol.coeff_lst[deg]
+        
+        
 
     def __sub__(self, sec_pol):
         for deg, coeff in enumerate(self.coeff_lst):
