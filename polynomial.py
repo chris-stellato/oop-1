@@ -30,5 +30,8 @@ test + Polynomial([3,2,1])
 print(test)
 test - Polynomial([3,2,1])
 print(test)
+# works
 test.__neg__()
 print(test)
+# doesn't work?
+print(-test)
