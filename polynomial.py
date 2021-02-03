@@ -77,16 +77,12 @@ class Polynomial():
         list_of_strings[0] = list_of_strings[0].replace("- ", "-")
 
         return ' '.join(list_of_strings)
-
-    def __mul__(self, sec_coeff):
-
-        list_of_elements = []
-
-        for i, coeff in enumerate(self.coeff_lst):
-            return_lst.append(self.coeff_lst[i] - sec_pol.coeff_lst[i])
-
-        return return_lst        
         
+    def __mul__(self, sec_pol):
+        mul_lst = []
+        for coeff in self.coeff_lst:
+            for sec_coeff in sec_pol.coeff_lst:
+                mul_lst.append(coeff*sec_coeff)
+        return mul_lst
 
-print((Polynomial([-3,1,0,-2])))
-
+print(Polynomial([3,2,1]) * Polynomial([4,2]))
