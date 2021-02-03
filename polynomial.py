@@ -77,7 +77,15 @@ class Polynomial():
         list_of_strings[0] = list_of_strings[0].replace("- ", "-")
 
         return ' '.join(list_of_strings)
-        
+
+    def __mul__(self, sec_coeff):
+
+        list_of_elements = []
+
+        for i, coeff in enumerate(self.coeff_lst):
+            return_lst.append(self.coeff_lst[i] - sec_pol.coeff_lst[i])
+
+        return return_lst        
         
 
 print((Polynomial([-3,1,0,-2])))
